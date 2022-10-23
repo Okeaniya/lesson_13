@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+[class*="__conteiner"]{
+	max-width: 1600px;
+	margin: 0 auto;
+}
+.space__fon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.projects__jupiter{
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	animation: way-jupiter 10s linear forwards;
+}
+@keyframes way-jupiter{
+	0%{
+		transform: translate(0,0) rotate(0deg);
+	}
+	50%{
+		transform: translate(500%,0) rotate(360deg);
+	}
+	100%{
+	}
+}
+
+.projects__land{
+	position: absolute;
+	top:220px;
+	left: 30px;
+	animation: way-land 9s linear forwards;
+}
+@keyframes way-land{
+	0%{
+		transform: translate(0,0) rotate(0deg);
+	}
+	50%{
+		transform: translate(600%,0) rotate(360deg);
+	}
+	100%{
+		transform: translate(0,0) rotate(0deg);
+	}
+}
+
+.projects__venera{
+	position: absolute;
+	top: 390px;
+	left: 20px;
+	animation: way-venera 11s linear forwards;
+}
+@keyframes way-venera{
+	0%{
+		transform: translate(0,0) rotate(0deg);
+	}
+	50%{
+		transform: translate(600%,0) rotate(360deg);
+	}
+	100%{
+	}
+}
+.projects__mars{
+	position: absolute;
+	top: 550px;
+	left: 20px;
+	animation: way-mars 15s linear forwards;
+}
+@keyframes way-mars{
+	0%{
+		transform: translate(0,0) rotate(0deg);
+	}
+	50%{
+		transform: translate(600%,0) rotate(360deg);
+	}
+	100%{
+	}
+}
+
+.projects__roket{
+	position: absolute;
+	top: 650px;
+	right: 100px;
+	z-index: 3;
+	animation: roket 8s linear normal forwards;
+}
+@keyframes roket{
+	0%{
+		transform: translate(5%,0) rotate(30deg);
+	}
+	100%{
+		transform: translate(-800%,-100%) rotate(-20deg);
+	}
+}
+.projects__cosmonaft{
+	position: absolute;
+	top: 500px;
+	left: 550px;
+	z-index: 5;
+	animation: cosmonaft 2s linear 1 normal forwards;
+}
+@keyframes cosmonaft{
+	0%{
+		transform: translate(0,0) rotate(80deg) scale(2);
+	}
+	100%{
+		transform: translate(900px,-800px) rotate(360deg) scale(0.2);
+	}
+}
